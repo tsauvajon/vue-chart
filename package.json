@@ -1,7 +1,7 @@
 {
   "name": "npm-stats",
   "version": "1.0.0",
-  "description": "A Vue.js project",
+  "description": "npm charts",
   "author": "Thomas SAUVAJON <thomas.sauvajon@gmail.com>",
   "private": true,
   "scripts": {
