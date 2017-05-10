@@ -1,14 +1,15 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <headaire></headaire>
     <router-view></router-view>
+    <footaire></footaire>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'app',
-};
+  export default {
+    name: 'app',
+  };
 </script>
 
 <style>
