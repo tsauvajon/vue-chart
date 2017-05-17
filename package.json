@@ -9,12 +9,13 @@
     "start": "node build/dev-server.js",
     "build": "node build/build.js",
     "lint": "eslint --ext .js,.vue src",
-    "deploy": "pre-deploy.bat && push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "replace '/static' 'static' dist/index.html && push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "axios": "^0.16.1",
     "chart.js": "^2.5.0",
     "push-dir": "^0.4.1",
+    "replace": "^0.3.0",
     "vue": "^2.2.6",
     "vue-chartjs": "^2.6.0",
     "vue-router": "^2.3.1"
