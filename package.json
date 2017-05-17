@@ -9,7 +9,9 @@
     "start": "node build/dev-server.js",
     "build": "node build/build.js",
     "lint": "eslint --ext .js,.vue src",
-    "deploy": "replace-in-file /\/static/g static dist/index.html --isRegex && push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy:1": "replace-in-file /\/static/g static dist/index.html --isRegex",
+    "deploy:2": "push-dir --dir=dist --branch=gh-pages --cleanup",
+    "deploy": "deploy:1 && deploy:2"
   },
   "dependencies": {
     "axios": "^0.16.1",
