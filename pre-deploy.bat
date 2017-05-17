@@ -1,0 +1,1 @@
+powershell -Command "(gc dist/index.html) -replace '/static', 'static' | Out-File dist/index.html"
